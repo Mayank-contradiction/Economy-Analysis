@@ -1,0 +1,49 @@
+.chartBox {
+    width: 80%;
+    min-height: 450px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 3px var(--light-green);
+    background: white;
+}
+
+.chartBox2 {
+    width: 100%;
+    min-height: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 3px var(--light-green);
+}
+
+@media only screen and (max-width: 1050px){
+    .chartBox, .chartBox2{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .chartBox, .chartBox2{
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .chartBox, .chartBox2{
+        width: 400px;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .chartBox, .chartBox2{
+        width: 300px;
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .chartBox, .chartBox2{
+        width: 99%;
+        height: 80%;
+    }
+}
