@@ -282,14 +282,14 @@ const Main = () => {
                     {countryData[`${countryName}`] ? <>
                         <ul className="nav nav-tabs" role="tablist">
                             {Object.keys(countryData[`${countryName}`]).map((categoryGroup,i)=>{ return <li className="nav-item">
-                                <a className={`nav-link light-text ${i===0? 'active' : ''}`} data-toggle="tab" href={`#${categoryGroup}`}>{`${categoryGroup}`}</a>
+                                <a className={`nav-link light-text ${i===0? 'active' : ''}`} data-toggle="tab" href={`#${countryName}-${categoryGroup}`}>{`${categoryGroup}`}</a>
                                 </li>
                             })}
                         </ul>
 
                         <div className="tab-content">
                             {Object.keys(countryData[`${countryName}`]).map((categoryGroup,i)=>{
-                            return <div id={`${categoryGroup}`} className={`p-0 container tab-pane ${i===0? 'active' : ''}`}><br/>
+                            return <div id={`${countryName}-${categoryGroup}`} className={`p-0 container tab-pane ${i===0? 'active' : ''}`}><br/>
                                 <div className="table-responsive">
                                     <table className="w-100 table table-light">
                                         <thead className='thead-color'>
